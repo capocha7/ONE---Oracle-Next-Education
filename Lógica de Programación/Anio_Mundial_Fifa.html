@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> MUNDIALES </h1>
+<script>
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+/*
+aniomundial=1930
+
+alert("Hubo mundial en " + aniomundial)
+
+aniomundial+=4
+
+alert("Hubo mundial en " + aniomundial)
+*/
+var aniomundial=1930
+
+/*
+while (aniomundial<2020)
+{
+    alert("Hubo mundial en " + aniomundial)
+    aniomundial+=4
+    
+}
+alert("fin")
+*/
+/*
+while (aniomundial<2020)
+{
+    imprimir("Hubo mundial en " + aniomundial)
+    aniomundial+=4
+    
+}
+alert("fin")
+*/
+
+var limite=parseInt(prompt("Ingrese el año limite para calcular"))
+
+while (aniomundial<limite)
+{
+    imprimir("Hubo mundial en " + aniomundial)
+    aniomundial+=4
+}
+imprimir("FIN")
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

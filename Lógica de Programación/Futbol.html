@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+</head>
+<body>
+
+
+<h1> PROGRAMA - CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+<script>
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+
+/*
+var victorias= prompt("Cuantos victorias tuvo el equipo: ");
+var empates= prompt("Cuantos empates tuvo el equipo: ");
+//var derrotas= prompt("Cuantos derrotas tuvo el equipo: ");
+
+// DEVUELVE VALOR CONCATENADO, EL "VICTORIAS" COMO INT Y EL 
+// "EMPATES" COMO STR, POR ESO DEVUELVE 2 NUMEROS PEGADOS Y NO SUMADOS
+var puntostotal=(victorias*3) + empates;
+imprimir("El total de puntos de equipo es: "+ puntostotal)
+
+// JAVA DEVUELVE VALORES DE INPUT QUE DEBERIAN SER NUMEROS COMO STR, 
+// PERO SI EL STR LO MULTIPLICO LO CONVIERTO EN INT
+
+var puntostotal=(victorias*3) + empates*1;
+
+imprimir("El total de puntos de equipo es: "+ puntostotal)
+*/
+
+
+/*
+var victorias= parseInt(prompt("Cuantos victorias tuvo el equipo: "));
+var empates= parseInt(prompt("Cuantos empates tuvo el equipo: "));
+
+
+var puntostotal=(victorias*3) + empates;
+
+imprimir("El total de puntos de equipo es: "+ puntostotal)
+*/
+
+/**/
+var victorias= parseInt(prompt("Cuantos victorias tuvo el equipo: "));
+var empates= parseInt(prompt("Cuantos empates tuvo el equipo: "));
+
+
+var puntostotal=(victorias*3) + empates;
+
+imprimir("El total de puntos de equipo es: "+ puntostotal);
+
+
+if (puntostotal>18){
+    imprimir("El equipo esta mejor que el  año pasado");
+}
+if (puntostotal==18){
+    imprimir("El equipo esta igual que el  año pasado");
+}
+if (puntostotal<18){
+    imprimir("El equipo esta peor que el  año pasado");    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
+</body>
+</html>

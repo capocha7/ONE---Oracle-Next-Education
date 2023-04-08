@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edades</title>
+</head>
+<body>
+
+    <h1>EDADES DE LA FAMILIA</h1>
+    <script>
+
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+
+
+var numeroMiembros= parseInt(prompt("Ingrese la cantidad de miembros de la familia"))
+var contador=1
+var totalEdades=0
+
+while (contador <= numeroMiembros)
+{
+    
+    edad=parseInt(prompt("Ingrese la edad del familiar"))
+    totalEdades=totalEdades+edad
+    contador++
+}
+
+mediaEdades=totalEdades/numeroMiembros
+
+imprimir("El total de edades es: " + totalEdades)
+
+imprimir("La media de edades es: " + mediaEdades)
+
+
+/*
+edadPadre=42;
+edadMadre=38;
+edadHijo=15;
+edadHija=12;
+
+var totalEdad = edadPadre + edadMadre + edadHijo + edadHija
+var mediaEdad= totalEdad / 4
+
+imprimir("La media de las edades es " + mediaEdad)
+*/
+
+    </script>
+</body>
+</html>

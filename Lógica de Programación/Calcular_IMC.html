@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+<h1>CALCULAR IMC</h1>
+<script>
+
+/*
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+function calcularimc(peso,altura){
+    imc=peso/(altura*altura);
+    document.write("El peso es ",peso," kg y la altura es ",altura," m <br>");
+    document.write("El IMC es: "+imc);
+    saltolinea();
+}
+
+var peso1=85
+var altura1=1.80
+var imc1=peso1/(altura1*altura1)
+
+imprimir("El imc es:"+imc1)
+
+var peso2=67
+var altura2=1.84
+var imc2=peso2/(altura2 * altura2)
+
+imprimir("El imc es:" + imc2)
+
+calcularimc(64,1.53)
+calcularimc(103,1.78)
+
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+function calcularimc(peso,altura){
+    return 10;
+}
+
+imprimir(calcularimc(64,1.53))
+imprimir(calcularimc(50))
+
+
+
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+function calcularimc(peso,altura){
+    return (peso/(altura*altura))
+}
+
+imprimir(calcularimc(64,1.53))
+imprimir(calcularimc(50,1.90))
+*/
+
+
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+
+function calcularimc(peso,altura){
+    return (peso/(altura*altura))
+}
+
+/*
+nombre=prompt("Cual es su nombre: ")
+pedirpeso= prompt(nombre +" informe su peso: ")
+pediraltura=prompt(nombre + " informe su altura: ")
+
+imprimir("El imc es: " + calcularimc(pedirpeso,pediraltura))
+*/
+
+
+pedirpeso= prompt(" informe su peso: ")
+pediraltura=prompt(" informe su altura: ")
+imccalculado=calcularimc(pedirpeso,pediraltura)
+imprimir("El imc es: " + imccalculado)
+
+
+if (imccalculado < 18.5){
+    imprimir("Abajo de lo recomendado")
+}
+if (imccalculado >= 18.5 && imccalculado <= 24.9){
+    imprimir("Normal")
+}
+if (imccalculado > 25 && imccalculado <= 29.9){
+    imprimir("Sobrepeso")
+}
+if (imccalculado >= 30){
+    imprimir("Obesidad")
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

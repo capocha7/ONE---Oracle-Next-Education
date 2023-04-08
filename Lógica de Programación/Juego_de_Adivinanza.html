@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+function saltolinea()
+{
+    document.write("<br><br>");
+}
+
+function imprimir(frase)
+{
+    document.write(frase);
+    saltolinea();
+}
+/*
+var pensado=5;
+var lanzado= parseInt(prompt("Ingrese un numero entre 0-10"))
+
+if (pensado==lanzado){
+    imprimir("Acerto")
+}
+if (pensado!=lanzado){
+    imprimir("Ustede erró")
+}
+
+*/
+var pensado=Math.round(Math.random()*10);
+var lanzado= parseInt(prompt("Ingrese un numero entre 0-10"))
+
+if (pensado==lanzado){
+    imprimir("Acertó")
+}
+if (pensado!=lanzado){
+    imprimir("Usted erró, el numero pensado era " + pensado)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
